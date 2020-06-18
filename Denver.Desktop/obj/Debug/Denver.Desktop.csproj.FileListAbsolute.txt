@@ -1,0 +1,8 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\bin\Debug\Denver.Desktop.exe
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\bin\Debug\Denver.Desktop.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.csprojAssemblyReference.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.Properties.Resources.resources
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.csproj.GenerateResource.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.exe
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Desktop\obj\Debug\Denver.Desktop.pdb

@@ -1,0 +1,13 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.BLL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.BLL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\obj\Debug\Denver.BLL.csprojAssemblyReference.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\obj\Debug\Denver.BLL.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\obj\Debug\Denver.BLL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\obj\Debug\Denver.BLL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.Common.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.DAL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.Configuration.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.Common.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.DAL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\bin\Debug\Denver.Configuration.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.BLL\obj\Debug\Denver.BLL.csproj.CopyComplete

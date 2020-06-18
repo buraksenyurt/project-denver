@@ -1,0 +1,15 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Facade.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Facade.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\obj\Debug\Denver.Facade.csprojAssemblyReference.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\obj\Debug\Denver.Facade.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\obj\Debug\Denver.Facade.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\obj\Debug\Denver.Facade.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.BLL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Common.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.DAL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Configuration.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.BLL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Common.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.DAL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\bin\Debug\Denver.Configuration.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Facade\obj\Debug\Denver.Facade.csproj.CopyComplete

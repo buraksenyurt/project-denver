@@ -1,0 +1,6 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\bin\Debug\Denver.PCL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\bin\Debug\Denver.PCL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\obj\Debug\Denver.PCL.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\obj\Debug\Denver.PCL.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\obj\Debug\Denver.PCL.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.PCL\obj\Debug\Denver.PCL.csprojAssemblyReference.cache

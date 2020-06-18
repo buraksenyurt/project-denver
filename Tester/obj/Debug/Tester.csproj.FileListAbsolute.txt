@@ -1,0 +1,6 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\bin\Debug\Tester.exe
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\bin\Debug\Tester.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\obj\Debug\Tester.csprojAssemblyReference.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\obj\Debug\Tester.exe
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Tester\obj\Debug\Tester.pdb

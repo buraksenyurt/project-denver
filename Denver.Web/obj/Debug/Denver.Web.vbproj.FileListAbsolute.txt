@@ -1,0 +1,11 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\bin\Denver.Web.dll.config
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\bin\Denver.Web.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\bin\Denver.Web.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\bin\Denver.Web.xml
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.vbprojAssemblyReference.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.Resources.resources
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.vbproj.GenerateResource.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.vbproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.xml
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Web\obj\Debug\Denver.Web.pdb

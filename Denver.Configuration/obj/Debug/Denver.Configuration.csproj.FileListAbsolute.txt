@@ -1,0 +1,6 @@
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\bin\Debug\Denver.Configuration.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\bin\Debug\Denver.Configuration.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\obj\Debug\Denver.Configuration.csproj.CoreCompileInputs.cache
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\obj\Debug\Denver.Configuration.dll
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\obj\Debug\Denver.Configuration.pdb
+C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Configuration\obj\Debug\Denver.Configuration.csprojAssemblyReference.cache
