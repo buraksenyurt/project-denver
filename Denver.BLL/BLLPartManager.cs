@@ -1,5 +1,6 @@
 ﻿using Denver.Common;
 using Denver.DAL;
+using Denver.PCL;
 using System;
 
 namespace Denver.BLL
@@ -12,7 +13,7 @@ namespace Denver.BLL
             return manager.AddNewPart(code, number, price, name, quantity, supplier, description);
         }
 
-        public Denver.PCL.Part[] GetParts()
+        public Part[] GetParts()
         {
             throw new NotImplementedException();
         }
