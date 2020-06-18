@@ -11,5 +11,10 @@ namespace Denver.BLL
             DALPartManager manager = new DALPartManager();
             return manager.AddNewPart(code, number, price, name, quantity, supplier, description);
         }
+
+        public Denver.PCL.Part[] GetParts()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
