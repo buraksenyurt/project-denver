@@ -1,6 +1,0 @@
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\bin\Debug\Denver.Common.dll
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\bin\Debug\Denver.Common.pdb
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\obj\Debug\Denver.Common.csprojAssemblyReference.cache
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\obj\Debug\Denver.Common.csproj.CoreCompileInputs.cache
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\obj\Debug\Denver.Common.dll
-C:\Users\BurakSelim.Senyurt\source\repos\DenverERP\Denver.Common\obj\Debug\Denver.Common.pdb
