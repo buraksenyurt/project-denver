@@ -52,6 +52,10 @@
       <Project>{DBB30609-9E3D-48A7-B08A-43309AE85069}</Project>
       <Name>Denver.Configuration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Denver.PCL\Denver.PCL.csproj">
+      <Project>{241AEBC8-6EFF-4149-BCBB-2882BCC21281}</Project>
+      <Name>Denver.PCL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
