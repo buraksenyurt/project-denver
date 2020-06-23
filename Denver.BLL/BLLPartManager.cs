@@ -1,6 +1,7 @@
 ﻿using Denver.Common;
 using Denver.DAL;
 using Denver.PCL;
+using Denver.Tools;
 using System;
 using System.Data;
 
@@ -22,7 +23,7 @@ namespace Denver.BLL
         private bool SendInvoiceSummaryToBrasilBank(int code, int number, double price, int stockCount, string name, int quantity, string supplier)
         {
             bool result = false;
-            result=Util.SendRequest(code, number, price, stockCount, name, quantity, supplier);
+            result=MailUtiliy.SendRequest(code, number, price, stockCount, name, quantity, supplier);
             return result;
         }
 

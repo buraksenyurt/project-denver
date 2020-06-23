@@ -21,6 +21,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Denver.Web", "Denver.Web\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{9CD733D8-B9F4-473A-B7AB-DA58A7438BA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.Tools", "Denver.Tools\Denver.Tools.csproj", "{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{9CD733D8-B9F4-473A-B7AB-DA58A7438BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CD733D8-B9F4-473A-B7AB-DA58A7438BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CD733D8-B9F4-473A-B7AB-DA58A7438BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

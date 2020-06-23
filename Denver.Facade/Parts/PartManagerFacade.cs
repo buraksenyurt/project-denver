@@ -1,17 +1,19 @@
 ﻿using Denver.BLL;
 using Denver.Common;
 using Denver.PCL;
+using Denver.Tools;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Web;
 
 namespace Denver.Facade.Parts
 {
     public class PartManagerFacade
     {
-        public RetCode AddToStock(int code,int number,double price,int stockCount,string name,int quantity,string supplier,string description)
+        public RetCode AddToStock(int code, int number, double price, int stockCount, string name, int quantity, string supplier, string description)
         {
             BLLPartManager manager = new BLLPartManager();
             try
@@ -29,25 +31,27 @@ namespace Denver.Facade.Parts
                 else if (quantity == 0)
                     return RetCode.Fail;
 
-                manager.AddNewPart(code, number, price,stockCount, name, quantity, supplier, description);
+                manager.AddNewPart(code, number, price, stockCount, name, quantity, supplier, description);
 
-                if(stockCount<100)
+                int userId = Convert.ToInt32(HttpContext.Current.Session["CurrentUserId"]);
+                if (stockCount < 100)
                 {
-                    Util.SendEmailToUnitHead(Code:code, Count:stockCount);
+                    MailUtiliy.SendEmailToUnitHead(userId, code, stockCount);
                 }
-                else if(stockCount>100 &&stockCount<1000)
+                else if (stockCount > 100 && stockCount < 1000)
                 {
-                    Util.SendEmailToManager(Code: code, Count: stockCount);
+                    MailUtiliy.SendEmailToManager(userId, code, stockCount);
                 }
-                else if(stockCount>1000)
+                else if (stockCount > 1000)
                 {
-                    Util.SendEmailToBoss(Code: code, Count: stockCount);
+                    MailUtiliy.SendEmailToBoss(Code: code, Count: stockCount);
                 }
 
                 return RetCode.Success;
             }
-            catch
+            catch (Exception excp)
             {
+
                 return RetCode.Fail;
             }
         }

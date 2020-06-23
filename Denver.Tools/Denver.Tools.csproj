@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEA792AF-74E3-466E-8622-44DC3459C03C}</ProjectGuid>
+    <ProjectGuid>{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Denver.BLL</RootNamespace>
-    <AssemblyName>Denver.BLL</AssemblyName>
+    <RootNamespace>Denver.Tools</RootNamespace>
+    <AssemblyName>Denver.Tools</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLLPartManager.cs" />
+    <Compile Include="MailUtiliy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Denver.Common\Denver.Common.csproj">
       <Project>{C9DA4011-2534-4A42-A038-90147A481A8D}</Project>
       <Name>Denver.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Denver.Configuration\Denver.Configuration.csproj">
+      <Project>{DBB30609-9E3D-48A7-B08A-43309AE85069}</Project>
+      <Name>Denver.Configuration</Name>
     </ProjectReference>
     <ProjectReference Include="..\Denver.DAL\Denver.DAL.csproj">
       <Project>{1FDC0391-5D53-4D7E-8DF8-A6E893E5C2DC}</Project>
@@ -55,10 +60,6 @@
     <ProjectReference Include="..\Denver.PCL\Denver.PCL.csproj">
       <Project>{241AEBC8-6EFF-4149-BCBB-2882BCC21281}</Project>
       <Name>Denver.PCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Denver.Tools\Denver.Tools.csproj">
-      <Project>{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}</Project>
-      <Name>Denver.Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
