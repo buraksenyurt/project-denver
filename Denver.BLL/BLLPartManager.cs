@@ -23,7 +23,7 @@ namespace Denver.BLL
         private bool SendInvoiceSummaryToBrasilBank(int code, int number, double price, int stockCount, string name, int quantity, string supplier)
         {
             bool result = false;
-            result=MailUtiliy.SendRequest(code, number, price, stockCount, name, quantity, supplier);
+            result=MailUtility.SendRequest(code, number, price, stockCount, name, quantity, supplier);
             return result;
         }
 

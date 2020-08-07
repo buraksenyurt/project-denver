@@ -36,15 +36,15 @@ namespace Denver.Facade.Parts
                 int userId = Convert.ToInt32(HttpContext.Current.Session["CurrentUserId"]);
                 if (stockCount < 100)
                 {
-                    MailUtiliy.SendEmailToUnitHead(userId, code, stockCount);
+                    MailUtility.SendEmailToUnitHead(userId, code, stockCount);
                 }
                 else if (stockCount > 100 && stockCount < 1000)
                 {
-                    MailUtiliy.SendEmailToManager(userId, code, stockCount);
+                    MailUtility.SendEmailToManager(userId, code, stockCount);
                 }
                 else if (stockCount > 1000)
                 {
-                    MailUtiliy.SendEmailToBoss(Code: code, Count: stockCount);
+                    MailUtility.SendEmailToBoss(Code: code, Count: stockCount);
                 }
 
                 return RetCode.Success;

@@ -13,7 +13,7 @@ using System.Text;
 
 namespace Denver.Tools
 {
-    public class MailUtiliy
+    public class MailUtility
     {
         private static string host = ConfigurationManager.AppSettings["SMTPHost"];
         private static string port = ConfigurationManager.AppSettings["SMTPPort"];
