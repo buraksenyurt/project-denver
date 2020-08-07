@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.Tools", "Denver.Tools\Denver.Tools.csproj", "{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.NextUI", "Denver.NextUI\Denver.NextUI.csproj", "{A94E4C12-8395-4263-9F53-C89F9E10B921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
