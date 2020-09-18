@@ -67,28 +67,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.aspx" />
-    <Content Include="Part.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\MasterLogo.png" />
+    <Content Include="Parts.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Part.aspx.cs">
-      <DependentUpon>Part.aspx</DependentUpon>
+    <Compile Include="DenverUI.Master.cs">
+      <DependentUpon>DenverUI.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Part.aspx.designer.cs">
-      <DependentUpon>Part.aspx</DependentUpon>
+    <Compile Include="DenverUI.Master.designer.cs">
+      <DependentUpon>DenverUI.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Parts.aspx.cs">
+      <DependentUpon>Parts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parts.aspx.designer.cs">
+      <DependentUpon>Parts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DenverUI.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Denver.NextUI
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class DenverUI : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

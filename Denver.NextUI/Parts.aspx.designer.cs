@@ -11,7 +11,7 @@ namespace Denver.NextUI
 {
 
 
-    public partial class Part
+    public partial class Parts
     {
 
         /// <summary>
