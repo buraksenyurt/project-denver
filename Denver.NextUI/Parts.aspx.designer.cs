@@ -15,15 +15,6 @@ namespace Denver.NextUI
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -42,6 +33,15 @@ namespace Denver.NextUI
         protected global::System.Web.UI.WebControls.TextBox txtCode;
 
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
         /// txtNumber control.
         /// </summary>
         /// <remarks>
@@ -49,6 +49,15 @@ namespace Denver.NextUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNumber;
+
+        /// <summary>
+        /// RequiredFieldValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
         /// <summary>
         /// txtPrice control.
@@ -60,6 +69,15 @@ namespace Denver.NextUI
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+
+        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -67,6 +85,15 @@ namespace Denver.NextUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtName;
+
+        /// <summary>
+        /// RequiredFieldValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
 
         /// <summary>
         /// txtQuantity control.
@@ -78,13 +105,22 @@ namespace Denver.NextUI
         protected global::System.Web.UI.WebControls.TextBox txtQuantity;
 
         /// <summary>
-        /// txtSupplier control.
+        /// RequiredFieldValidator5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSupplier;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+
+        /// <summary>
+        /// drpSupplier control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drpSupplier;
 
         /// <summary>
         /// txtDescription control.
@@ -94,6 +130,15 @@ namespace Denver.NextUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
+
+        /// <summary>
+        /// RequiredFieldValidator7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
 
         /// <summary>
         /// btnAdd control.
@@ -112,5 +157,14 @@ namespace Denver.NextUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSummary;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
     }
 }

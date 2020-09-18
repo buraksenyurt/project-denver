@@ -19,7 +19,7 @@ namespace Denver.NextUI
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            var result = partManagerFacade.AddToStock(Convert.ToInt32(txtCode.Text), Convert.ToInt32(txtNumber.Text), Convert.ToDouble(txtPrice.Text), 0, txtName.Text, Convert.ToInt32(txtQuantity.Text), txtSupplier.Text, txtDescription.Text);
+            var result = partManagerFacade.AddToStock(Convert.ToInt32(txtCode.Text), Convert.ToInt32(txtNumber.Text), Convert.ToDouble(txtPrice.Text), 0, txtName.Text, Convert.ToInt32(txtQuantity.Text), drpSupplier.SelectedValue, txtDescription.Text);
             if (result == Common.RetCode.Success)
             {
                 lblSummary.Text = "Parça eklendi";

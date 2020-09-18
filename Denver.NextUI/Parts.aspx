@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DenverUI.Master" AutoEventWireup="true" CodeBehind="Parts.aspx.cs" Inherits="Denver.NextUI.Parts" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
+   
         <div>
             <table>
                 <tr>
@@ -9,6 +9,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtCode" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCode" ErrorMessage="Parça kodu girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
                     </td>
                 </tr>
 
@@ -16,21 +17,27 @@
                     <td>
                          Parça Numarası</td>
                     <td>
-                        <asp:TextBox ID="txtNumber" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="txtNumber" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtNumber" ErrorMessage="Parça numarası girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
 
                 <tr>
                     <td>
                          Birim Fiyatı</td>
                     <td>
-                        <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtPrice" ErrorMessage="Birim fiyat girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
 
                 <tr>
                     <td>
                          Parça Tanımı</td>
                     <td>
-                        <asp:TextBox ID="txtName" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="txtName" MaxLength="30" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtName" ErrorMessage="Parça tanımı girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -38,6 +45,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtQuantity" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtQuantity" ErrorMessage="Güncel stok miktarı girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -45,23 +53,32 @@
                         Tedarikçi
                     </td>
                     <td>
-                         <asp:TextBox ID="txtSupplier" runat="server" Width="289px"></asp:TextBox>
+                         <asp:DropDownList ID="drpSupplier" runat="server" AutoPostBack="True">
+                             <asp:ListItem>South Brasil Iron Giant Company</asp:ListItem>
+                             <asp:ListItem>Mario Brothers Associated</asp:ListItem>
+                             <asp:ListItem>Noname Business Solutions</asp:ListItem>
+                             <asp:ListItem>Douglas Mac Corp</asp:ListItem>
+                             <asp:ListItem>Spain Super Steal</asp:ListItem>
+                         </asp:DropDownList>                        
                     </td>
                 </tr>
                 <tr>
                     <td>Açıklama</td>
-                    <td><asp:TextBox ID="txtDescription" runat="server" Height="85px" MaxLength="200" TextMode="MultiLine" Width="292px"></asp:TextBox></td>
+                    <td>
+                        <asp:TextBox ID="txtDescription" runat="server" Height="85px" MaxLength="200" TextMode="MultiLine" Width="292px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtDescription" ErrorMessage="Açıklama girilmeli" ForeColor="Red">!</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><asp:Button ID="btnAdd" runat="server" Text="Stoğa Ekle" OnClick="btnAdd_Click" /></td>
+                    <td><asp:Button ID="btnAdd" runat="server" Text="Stoğa Ekle" OnClick="btnAdd_Click" SkinID="btnSubmit" /></td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <asp:Label ID="lblSummary" runat="server"></asp:Label>
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
                     </td>
                 </tr>
             </table>            
         </div>
-    </form>
 </asp:Content>

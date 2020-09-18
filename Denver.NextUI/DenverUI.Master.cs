@@ -13,5 +13,10 @@ namespace Denver.NextUI
         {
 
         }
+
+        protected void btnPartsPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Parts.aspx");
+        }
     }
 }
