@@ -1,3 +1,5 @@
+> :warning: Dikkat. Bu çalışmanın teknik borcu yüksek bir uygulama inşa etmek için tasarlanmaktadır. Sonrasında yazılımcı adaylarının bu teknik borcu hafifletmek için gerekli OOP pratiklerini uygulaması beklenmektedir.
+
 # Project-Denver
 
 Denver, Brezilya'nın en büyük elektrik süpürge malzemeleri üreticisi için 2000li yılların başında yazılmış bir ERP ürünüdür. Ürün kataloglama, satış, faturalama, yedek parça tedariki gibi modülleri olup dünya çapında 800den fazla bayii tarafından kullanılmaktadır.
