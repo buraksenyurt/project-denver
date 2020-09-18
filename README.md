@@ -1,4 +1,4 @@
-> :warning: Dikkat. Bu çalışmanın teknik borcu yüksek bir uygulama inşa etmek için tasarlanmaktadır. Sonrasında yazılımcı adaylarının bu teknik borcu hafifletmek için gerekli OOP pratiklerini uygulaması beklenmektedir.
+> :warning: Dikkat. Bu çalışma teknik borcu yüksek bir uygulamayı tasvir etmek üzere planlanmıştır. Yazılımcı adaylarının bu teknik borcu hafifletmek için gerekli OOP pratiklerini uygulaması beklenmektedir.
 
 # Project-Denver
 
