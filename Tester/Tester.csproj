@@ -44,5 +44,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Denver.Common\Denver.Common.csproj">
+      <Project>{C9DA4011-2534-4A42-A038-90147A481A8D}</Project>
+      <Name>Denver.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Denver.Facade\Denver.Facade.csproj">
+      <Project>{F79F4509-C75F-4971-846F-8951A19191A3}</Project>
+      <Name>Denver.Facade</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
