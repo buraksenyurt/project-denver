@@ -61,8 +61,7 @@
                         <asp:Label ID="lblSummary" runat="server"></asp:Label>
                     </td>
                 </tr>
-            </table>
-            
+            </table>            
         </div>
     </form>
 </asp:Content>
