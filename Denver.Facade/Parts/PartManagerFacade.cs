@@ -13,7 +13,7 @@ namespace Denver.Facade.Parts
 {
     public class PartManagerFacade
     {
-        public RetCode AddToStock(int code, int number, double price, int stockCount, string name, int quantity, string supplier, string description)
+        public RetCode AddToStock(int code, int number, decimal price, int stockCount, string name, int quantity, string supplier, string description)
         {
             BLLPartManager manager = new BLLPartManager();
             try

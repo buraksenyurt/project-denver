@@ -14,6 +14,7 @@ namespace Denver.PCL
         private int quantity;
         private string description;
         private string supplier;
+        private DateTime createDate;
 
         public int PartCode
         {
@@ -52,6 +53,15 @@ namespace Denver.PCL
         {
             get { return supplier; }
             set { supplier = value; }
+        }
+        public DateTime CreateDate
+        {
+            get { return createDate; }
+            set {
+                if (value > DateTime.Now)
+                    throw new Exception();
+                createDate = value; 
+            }
         }
     }
 }

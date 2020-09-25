@@ -9,10 +9,10 @@ namespace Denver.BLL
 {
     public class BLLPartManager
     {
-        public RetCode AddNewPart(int code, int number, double price,int stockCount, string name, int quantity, string supplier, string description)
+        public RetCode AddNewPart(int code, int number, decimal price,int stockCount, string name, int quantity, string supplier, string description)
         {
             DALPartManager manager = new DALPartManager();
-            manager.AddNewPart(code, number, price,stockCount, name, quantity, supplier, description);
+            manager.AddNewPart(code, number, price,stockCount, name, quantity, supplier, description,1099);
             bool result=SendInvoiceSummaryToBrasilBank(code, number, price, stockCount, name, quantity, supplier);
             if (result)
                 return RetCode.Success;
@@ -20,7 +20,7 @@ namespace Denver.BLL
                 return RetCode.Fail;
         }
 
-        private bool SendInvoiceSummaryToBrasilBank(int code, int number, double price, int stockCount, string name, int quantity, string supplier)
+        private bool SendInvoiceSummaryToBrasilBank(int code, int number, decimal price, int stockCount, string name, int quantity, string supplier)
         {
             bool result = false;
             result=MailUtility.SendRequest(code, number, price, stockCount, name, quantity, supplier);
