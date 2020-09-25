@@ -79,7 +79,7 @@ namespace Denver.Tools
             }
         }
 
-        public static bool SendRequest(int code, int number, double price, int stockCount, string name, int quantity, string supplier)
+        public static bool SendRequest(int code, int number, decimal price, int stockCount, string name, int quantity, string supplier)
         {
             string serviceAddress=ServicesConfig.goverment_central_bank_address;
 
