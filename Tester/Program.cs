@@ -13,7 +13,7 @@ namespace Tester
             #region Parça Ekleme Testi
 
             PartManagerFacade partManagerFacade = new PartManagerFacade();
-            var retCode=partManagerFacade.AddToStock(9, 100, 90.95, 1000, "Vakum Tüpü", 500, "Rio Vakum Tüpleri Firması", "Sanayi tipi 500 miliwatt çekim gücüne sahip vakum tüpüdür");
+            var retCode=partManagerFacade.AddToStock(9, 100, 99M, 1000, "Vakum Tüpü", 500, "Rio Vakum Tüpleri Firması", "Sanayi tipi 500 miliwatt çekim gücüne sahip vakum tüpüdür");
             Console.WriteLine("Parça eklenme durumu ->" + retCode.ToString());
 
 
