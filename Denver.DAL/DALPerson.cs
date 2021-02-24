@@ -45,5 +45,15 @@ namespace Denver.DAL
             return person;
 
         }
+
+        public void Add(Person person)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int personId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

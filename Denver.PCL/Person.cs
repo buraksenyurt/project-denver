@@ -6,6 +6,7 @@
         private string _midName;
         private string _lastName;
         private string _email;
+        private decimal _salary;
 
         public string Name
         {
@@ -29,6 +30,12 @@
         {
             get { return _email; }
             set { _email = value; }
+        }
+
+        public decimal Salary
+        {
+            get { return _salary; }
+            set { _salary = value; }
         }
     }
 }

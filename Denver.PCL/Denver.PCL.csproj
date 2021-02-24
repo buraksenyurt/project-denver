@@ -42,7 +42,14 @@
   <ItemGroup>
     <Compile Include="Part.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="ProjectInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Denver.Common\Denver.Common.csproj">
+      <Project>{c9da4011-2534-4a42-a038-90147a481a8d}</Project>
+      <Name>Denver.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
