@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="BLLHumanResource.cs" />
     <Compile Include="BLLPartManager.cs" />
-    <Compile Include="ProjectManagement.cs" />
+    <Compile Include="BLLProjectManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

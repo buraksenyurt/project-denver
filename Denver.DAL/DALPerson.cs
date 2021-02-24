@@ -1,4 +1,5 @@
-﻿using Denver.Configuration;
+﻿using Denver.Common;
+using Denver.Configuration;
 using Denver.PCL;
 using System;
 using System.Data.SqlClient;
@@ -7,6 +8,8 @@ namespace Denver.DAL
 {
     public class DALPerson
     {
+        public ExceptionManager exceptionManager = new ExceptionManager();
+
         public DALPerson()
         {
         }
@@ -22,10 +25,16 @@ namespace Denver.DAL
             Person person = new Person();
             person.Email = reader["e_mail"].ToString();
             person.Name = reader["name"].ToString();
-            person.Name = reader["middle_name"].ToString();
-            person.Name = reader["full_name"].ToString();
+            person.MidName = reader["middle_name"].ToString();
+            person.LastName = reader["last_name"].ToString();
+            person.WorkStartDate = Convert.ToDateTime(reader["work_start_date"]);
+            person.Salary = Convert.ToDecimal(reader["salary"]);
             sqlConnection.Close();
-            return person;
+
+            if (person != null)
+                return person;
+
+            return null;
         }
 
         public Person FindUnitHead(int userId)
@@ -39,21 +48,61 @@ namespace Denver.DAL
             Person person = new Person();
             person.Email = reader["e_mail"].ToString();
             person.Name = reader["name"].ToString();
-            person.Name = reader["middle_name"].ToString();
-            person.Name = reader["full_name"].ToString();
+            person.MidName = reader["middle_name"].ToString();
+            person.LastName = reader["last_name"].ToString();
+            person.WorkStartDate = Convert.ToDateTime(reader["work_start_date"]);
+            person.Salary = Convert.ToDecimal(reader["salary"]);
             sqlConnection.Close();
             return person;
 
         }
 
-        public void Add(Person person)
+        public RetCode Add(Person person)
         {
-            throw new NotImplementedException();
+            try
+            {
+                SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
+                SqlCommand command = new SqlCommand("spAddPerson"); //TODO spFindUnitHead SP'si yazılacak
+                command.Parameters.AddWithValue("@prmName", person.Name);
+                command.Parameters.AddWithValue("@prmMidName", person.MidName);
+                command.Parameters.AddWithValue("@prmLastName", person.LastName);
+                command.Parameters.AddWithValue("@prmEmail", person.Email);
+                command.Parameters.AddWithValue("@prmWorkStartDate", person.WorkStartDate);
+                command.Parameters.AddWithValue("@prmSalary", person.Salary);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                sqlConnection.Open();
+                int inserted=command.ExecuteNonQuery();
+                if (inserted == 1)
+                    return RetCode.Success;
+
+                sqlConnection.Close();
+            }
+            catch(Exception excp)
+            {
+                exceptionManager.Error(excp.Message);
+            }
+            return RetCode.Fail;
         }
 
-        public void Delete(int personId)
+        public RetCode Delete(int personId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
+                SqlCommand command = new SqlCommand("spDeletePerson");
+                command.Parameters.AddWithValue("@prmPersonId", personId);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                sqlConnection.Open();
+                int deleted=command.ExecuteNonQuery();
+                sqlConnection.Close();
+                if (deleted == 1)
+                    return RetCode.Success;
+            }
+            catch (Exception excp)
+            {
+                exceptionManager.Error(excp.Message);
+            }
+            return RetCode.Fail;
         }
     }
 }

@@ -13,8 +13,7 @@ namespace Denver.Common
     {
         private string _logTo = "TextFile";
         private SqlConnection _connection;
-        private string _logFilePath;
-       
+        private string _logFilePath;       
 
         public ExceptionManager()
         {

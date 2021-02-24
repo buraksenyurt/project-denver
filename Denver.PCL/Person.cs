@@ -1,4 +1,7 @@
-﻿namespace Denver.PCL
+﻿using Denver.Common;
+using System;
+
+namespace Denver.PCL
 {
     public class Person
     {
@@ -7,6 +10,8 @@
         private string _lastName;
         private string _email;
         private decimal _salary;
+        private DateTime _workStartDate;
+        private WorkLocation _workLocation;
 
         public string Name
         {
@@ -36,6 +41,33 @@
         {
             get { return _salary; }
             set { _salary = value; }
+        }
+
+        public DateTime WorkStartDate
+        {
+            get
+            {
+                return _workStartDate;
+            }
+            set
+            {
+                if (value < DateTime.Now)
+                    _workStartDate = value;
+                else
+                    _workStartDate = DateTime.MinValue;
+            }
+        }
+
+        public WorkLocation Location
+        {
+            get
+            {
+                return _workLocation;
+            }
+            set
+            {
+                _workLocation = value;
+            }
         }
     }
 }

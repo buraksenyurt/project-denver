@@ -13,7 +13,7 @@ namespace Denver.BLL
         {
             decimal result = 0;
             double factor = 0;
-            ProjectManagement projectManagement = new ProjectManagement();
+            BLLProjectManagement projectManagement = new BLLProjectManagement();
             int lastYearsTotalAccomplishedProjectsCount = projectManagement.GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(person);
             if (lastYearsTotalAccomplishedProjectsCount > 0)
             {
@@ -32,6 +32,14 @@ namespace Denver.BLL
                         factor += 0.03;
                     if (projectInfos[i].WorkersCount > 9)
                         factor += 0.06;
+                    if (person.WorkStartDate.Year > 2005)
+                        factor += 0.005;
+                    if (projectInfos[i].IsInternationalProject == true)
+                        factor += 0.35;
+                    if (person.Location == WorkLocation.Office)
+                        factor += 0.15;
+                    else if (person.Location == WorkLocation.Remote)
+                        factor += 0.05;
                 }
 
                 result = person.Salary + (person.Salary * Convert.ToDecimal(factor));

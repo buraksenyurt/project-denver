@@ -3,7 +3,7 @@ using System;
 
 namespace Denver.BLL
 {
-    public class ProjectManagement
+    public class BLLProjectManagement
     {
         public int GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(Person person)
         {
