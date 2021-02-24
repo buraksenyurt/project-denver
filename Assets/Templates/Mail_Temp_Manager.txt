@@ -1,0 +1,4 @@
+<html>
+	<p>Dear {0}</p>
+	<p>Today we have been received {1} order for {2}.
+</html>

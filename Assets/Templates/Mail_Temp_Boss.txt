@@ -1,0 +1,4 @@
+<html>
+	<p>Dear Boss</p>
+	<p>Today we have been received {0} order for {1}.
+</html>
