@@ -57,6 +57,25 @@ namespace Denver.DAL
 
         }
 
+        public bool IsExistPerson(Person person)
+        {
+            SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
+            SqlCommand command = new SqlCommand("spIsExist"); //TODO spFindUnitHead SP'si yazılacak
+            command.Parameters.AddWithValue("@prmName", person.Name);
+            command.Parameters.AddWithValue("@prmMidName", person.MidName);
+            command.Parameters.AddWithValue("@prmLastName", person.LastName);
+            command.Parameters.AddWithValue("@prmEmail", person.Email);
+            command.Parameters.AddWithValue("@prmWorkStartDate", person.WorkStartDate);
+            command.Parameters.AddWithValue("@prmSalary", person.Salary);
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            sqlConnection.Open();
+            object value = command.ExecuteScalar();
+            if (Convert.ToInt32(value) >= 1)
+                return true;
+            else
+                return false;
+        }
+
         public RetCode Add(Person person)
         {
             try

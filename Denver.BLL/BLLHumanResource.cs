@@ -47,5 +47,19 @@ namespace Denver.BLL
 
             return result;
         }
+
+        public Dictionary<string, string> LoadWorkLocations()
+        {
+            string[] names = Enum.GetNames(typeof(WorkLocation));
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            int i = 0;
+            foreach (var name in names)
+            {
+                result.Add(i.ToString(),name);
+                i++;
+            }
+
+            return result;
+        }
     }
 }

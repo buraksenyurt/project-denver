@@ -70,6 +70,7 @@
     <Content Include="Default.aspx" />
     <Content Include="images\MasterLogo.png" />
     <Content Include="Parts.aspx" />
+    <Content Include="PersonManagement.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +95,13 @@
     <Compile Include="Parts.aspx.designer.cs">
       <DependentUpon>Parts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PersonManagement.aspx.cs">
+      <DependentUpon>PersonManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonManagement.aspx.designer.cs">
+      <DependentUpon>PersonManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -108,13 +116,33 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Denver.BLL\Denver.BLL.csproj">
+      <Project>{dea792af-74e3-466e-8622-44dc3459c03c}</Project>
+      <Name>Denver.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Denver.Common\Denver.Common.csproj">
       <Project>{C9DA4011-2534-4A42-A038-90147A481A8D}</Project>
       <Name>Denver.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Denver.Configuration\Denver.Configuration.csproj">
+      <Project>{dbb30609-9e3d-48a7-b08a-43309ae85069}</Project>
+      <Name>Denver.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Denver.DAL\Denver.DAL.csproj">
+      <Project>{1fdc0391-5d53-4d7e-8df8-a6e893e5c2dc}</Project>
+      <Name>Denver.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Denver.Facade\Denver.Facade.csproj">
       <Project>{F79F4509-C75F-4971-846F-8951A19191A3}</Project>
       <Name>Denver.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Denver.PCL\Denver.PCL.csproj">
+      <Project>{241aebc8-6eff-4149-bcbb-2882bcc21281}</Project>
+      <Name>Denver.PCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Denver.Tools\Denver.Tools.csproj">
+      <Project>{69227692-8c1c-4db3-b944-adb8cdcfc6af}</Project>
+      <Name>Denver.Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
