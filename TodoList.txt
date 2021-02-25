@@ -1,0 +1,1 @@
+#1 .Net 2.0 ile yazýlmýþ bir baþka library koyalým. WIN32 API'ler ile konuþuyor olsun örneðin.

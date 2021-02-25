@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DenverUI.master.cs" Inherits="Denver.NextUI.DenverUI" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 800px;
+            height: 175px;
+        }
+    </style>
+</head>
+<body>
+        <form id="form1" runat="server">
+        <div>
+            
+                <table style="width: 100%;">
+                    <tr>
+                        <td colspan="2" style="vertical-align:top;">
+                            <img alt="Denver and Denver Logo" class="auto-style2" longdesc="Company Log" src="images/MasterLogo.png" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width:25%;vertical-align:top">
+                            <asp:Button ID="btnPartsPage" runat="server" OnClick="btnPartsPage_Click" SkinID="btnLink" Text="Parça Ekle" />
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-family: Verdana; font-size: medium; color: #808080; text-align:center;">Copyright 2020 Denver Corp</td>
+                    </tr>
+                </table>
+        </div>
+        </form>
+</body>
+</html>
