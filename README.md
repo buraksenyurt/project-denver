@@ -10,10 +10,12 @@ Denver, Microsoft .Net 1.1 ile geliştirilmeye başlanmış ve nihayi güncel s�
 
 ## Oyun Alanı
 
-Projeyi indirdikten sonra belki SonarQube ile birlikte kullanmayı deneyebilirsiniz. Bu sayede teknik borçları görebilir, SonarQube'u öğrenebilir ve gerekli tedbirleri daha rahat alabilirsiniz. Söz gelimi aşağıdaki gibi bir sorun listesi ile çalışma fırsatınız olabilir.
+Projeyi indirdikten sonra teknik borç detayını görmek için belki de SonarQube ile birlikte çalışmayı deneyebilirsiniz. Bu sayede başarılı şekilde build olan çözümün kodsal sorunlarınları görebilir SonarQube'u öğrenebilir ve gerekli tedbirleri daha rahat alabilirsiniz. Söz gelimi aşağıdaki gibi bir sorun listesi ile çalışma fırsatınız olabilir.
 
-![assets/SonarQube_1.png](assets/SonarQube_1.png)
+![Assets/Sonarqube_1.png](Assets/Sonarqube_1.png)
 
 ve hatta projenin kalitesini ölçebilirsiniz.
 
-![assets/SonarQube_2.png](assets/SonarQube_2.png)
+![Assets/Sonarqube_2.png](Assets/Sonarqube_2.png)
+
+Ancak tabii ki bazı şeyler SonarQube tarafından da fark edilemeyebilir. Söz gelimi mimari kararlar, loglama ve monitoring stratejilerinin belirlenmesi, servislerin konumlandırılması, modüler hale gelebilirlik vs
