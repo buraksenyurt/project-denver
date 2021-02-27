@@ -6,6 +6,7 @@ using System.Text;
 namespace Denver.PCL
 {
     public class Part
+        :BaseEntityClass
     {
         private int partCode;
         private string name;

@@ -3,6 +3,7 @@
 namespace Denver.PCL
 {
     public class ProjectInfo
+        :BaseEntityClass
     {
         public int BusinessValue { get; set; }
         public ProjectSize Size { get; set; }

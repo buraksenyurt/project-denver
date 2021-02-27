@@ -4,6 +4,7 @@ using System;
 namespace Denver.PCL
 {
     public class Person
+        :BaseEntityClass
     {
         private string _name;
         private string _midName;
