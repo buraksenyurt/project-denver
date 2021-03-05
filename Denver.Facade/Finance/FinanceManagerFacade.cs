@@ -48,5 +48,85 @@ namespace Denver.Facade.Parts
         {
             throw new NotImplementedException();
         }
+
+        public int SendPendingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int BatchRun()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendApprovalWaitingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendPreExpneseApprovalRecordsPendingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int MakeOTS()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CreditAging()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetStatusUpdateCandidates(DateTime limitDate)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetWaitingEInvoicesForSendingBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendInvoiceListToGoldPartner()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CreateInvoicesFromWaybillsBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendFinanceApprovalWaitingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int AcceptInvoicesWithBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int ExpenseSheetSendApprovalWaitingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int PaymentRequestSendApprovalWaitingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendNotificationMailForExpiringGuaranteeLetters()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendNotificationMailForGuaranteeLetterPayments()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

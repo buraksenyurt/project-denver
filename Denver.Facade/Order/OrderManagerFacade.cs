@@ -18,5 +18,10 @@ namespace Denver.Facade.Parts
         {
             throw new NotImplementedException();
         }
+
+        public int GetWorkOrders()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

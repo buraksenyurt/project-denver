@@ -46,8 +46,11 @@
   <ItemGroup>
     <Compile Include="AutomicJob\AutomicJobFacade.cs" />
     <Compile Include="Common\CatalogTransferOperationsFacade.cs" />
+    <Compile Include="Common\CommonFacade.cs" />
     <Compile Include="Common\FileTransferOperationsFacade.cs" />
     <Compile Include="Customer\CustomerManagerFacade.cs" />
+    <Compile Include="Dealer\DealerNetworkManagerFacade.cs" />
+    <Compile Include="Employee\EmployeeManagerFacade.cs" />
     <Compile Include="Finance\FinanceManagerFacade.cs" />
     <Compile Include="Order\OrderManagerFacade.cs" />
     <Compile Include="Parts\PartManagerFacade.cs" />
@@ -71,6 +74,9 @@
       <Project>{69227692-8C1C-4DB3-B944-ADB8CDCFC6AF}</Project>
       <Name>Denver.Tools</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
