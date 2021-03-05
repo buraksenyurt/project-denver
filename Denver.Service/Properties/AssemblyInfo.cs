@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Denver.Automic.Services")]
+[assembly: AssemblyTitle("Denver.Service")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Denver.Automic.Services")]
+[assembly: AssemblyProduct("Denver.Service")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("efbe1a90-62b6-46bc-9e7c-eed286da792e")]
+[assembly: Guid("f4c1dae1-ed38-4621-b78c-2aa841d4b28e")]
 
 // Version information for an assembly consists of the following four values:
 //

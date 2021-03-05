@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.Tools", "Denver.Tool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.NextUI", "Denver.NextUI\Denver.NextUI.csproj", "{A94E4C12-8395-4263-9F53-C89F9E10B921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.Automic.Services", "Denver.Automic.Services\Denver.Automic.Services.csproj", "{EFBE1A90-62B6-46BC-9E7C-EED286DA792E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Denver.Service", "Denver.Service\Denver.Service.csproj", "{F4C1DAE1-ED38-4621-B78C-2AA841D4B28E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +77,10 @@ Global
 		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A94E4C12-8395-4263-9F53-C89F9E10B921}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFBE1A90-62B6-46BC-9E7C-EED286DA792E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFBE1A90-62B6-46BC-9E7C-EED286DA792E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFBE1A90-62B6-46BC-9E7C-EED286DA792E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFBE1A90-62B6-46BC-9E7C-EED286DA792E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C1DAE1-ED38-4621-B78C-2AA841D4B28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C1DAE1-ED38-4621-B78C-2AA841D4B28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C1DAE1-ED38-4621-B78C-2AA841D4B28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C1DAE1-ED38-4621-B78C-2AA841D4B28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
