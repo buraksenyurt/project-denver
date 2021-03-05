@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Net;
 using System.Web;
-using System.Web.Services;
 using Denver.Common;
 using Denver.Common.Services;
 using Denver.Facade.Common;
@@ -61,13 +60,6 @@ namespace Denver.Services
         #endregion Get Operation Result
 
         #region Execute Job
-        /// <summary>
-        /// Execute Job
-        /// </summary>
-        /// <param name="jobName"></param>
-        /// <param name="parameters"></param>
-        /// <returns></returns>
-        [WebMethod(Description = "Arka Plan İşlerin Çalıştırılması")]
         public BatchResultStruct ExecuteJob(string jobName, object[] parameters)
         {
             int jobId = 0;

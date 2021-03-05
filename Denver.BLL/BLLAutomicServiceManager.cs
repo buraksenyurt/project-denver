@@ -11,7 +11,7 @@ using Denver.Facade.Dealer;
 using Denver.Facade.Employee;
 using Denver.Facade.Parts;
 
-namespace Denver.Services
+namespace Denver.Automic.Services
 {
     /// <summary>
     /// Summary description for WSBatchJob.
@@ -566,7 +566,7 @@ namespace Denver.Services
                         break;
 
                     case "DNVR_AUTOMIC_JOB_0403":
-                        retCode = new FinanceManagerFacade().SendInvoicePendingMail(); 
+                        retCode = new FinanceManagerFacade().SendInvoicePendingMail();
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
 
@@ -732,10 +732,10 @@ namespace Denver.Services
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
                     case "DNVR_AUTOMIC_JOB_0474":
-                        result = new CustomerManagerFacade().ProcessCampaignOfBPActivation();                    
+                        result = new CustomerManagerFacade().ProcessCampaignOfBPActivation();
                         break;
                     case "DNVR_AUTOMIC_JOB_0475":
-                        result = new CustomerManagerFacade().ProcessCampaignOfBPActivationAfterStatusChanged();                   
+                        result = new CustomerManagerFacade().ProcessCampaignOfBPActivationAfterStatusChanged();
                         break;
 
                     case "DNVR_AUTOMIC_JOB_0477":
@@ -745,7 +745,7 @@ namespace Denver.Services
                         result = new PartManagerFacade().CalculateOEMOrderPriorityForTruckInvoices();
                         break;
                     case "DNVR_AUTOMIC_JOB_0464":
-                        result =null;
+                        result = null;
                         break;
 
 
@@ -755,11 +755,11 @@ namespace Denver.Services
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
                     case "DNVR_AUTOMIC_JOB_0489":
-                        result = new CustomerManagerFacade().PermissionUpdateForUnsubscribedEmailsBatch();                      
+                        result = new CustomerManagerFacade().PermissionUpdateForUnsubscribedEmailsBatch();
                         break;
 
                     case "DNVR_AUTOMIC_JOB_0490":
-                        result = new PartManagerFacade().SendMessageForADRTypeParts();                       
+                        result = new PartManagerFacade().SendMessageForADRTypeParts();
                         break;
                     case "DNVR_AUTOMIC_JOB_ASX003":
                         retCode = new SalesManagerFacade().GetWeatherInformation();
@@ -790,7 +790,7 @@ namespace Denver.Services
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
                     case "DNVR_AUTOMIC_JOB_0500":
-                        result = new CustomerManagerFacade().EventPostPoolCalculationBatch();                    
+                        result = new CustomerManagerFacade().EventPostPoolCalculationBatch();
                         break;
                     case "DNVR_AUTOMIC_JOB_SPD001":
                         result = new PartManagerFacade().BatchUpdatePartSupersessionRules();
@@ -799,32 +799,32 @@ namespace Denver.Services
                         result = new PartManagerFacade().CalculatePartLTValues();
                         break;
                     case "DNVR_AUTOMIC_JOB_0505":
-                        result = new CustomerManagerFacade().SendEventPostStatusMailBatch();                       
+                        result = new CustomerManagerFacade().SendEventPostStatusMailBatch();
                         break;
                     case "DNVR_AUTOMIC_JOB_0507":
-                        result = new CustomerManagerFacade().EventPostPoolStatusFTPBatch();                    
+                        result = new CustomerManagerFacade().EventPostPoolStatusFTPBatch();
                         break;
                     case "DNVR_AUTOMIC_JOB_0508":
-                        result = new CustomerManagerFacade().EventPostPoolStatusFOBatch();                     
+                        result = new CustomerManagerFacade().EventPostPoolStatusFOBatch();
                         break;
                     case "DNVR_AUTOMIC_JOB_ASX006":
                         retCode = new SalesManagerFacade().AdditionalWarrantyDaysCalculateDaily(DateTime.Today);
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
                     case "DNVR_AUTOMIC_JOB_0509":
-                        result = new CustomerManagerFacade().EmissionSurveyDeleteFromSSHCampaign();            
+                        result = new CustomerManagerFacade().EmissionSurveyDeleteFromSSHCampaign();
                         break;
                     case "DNVR_AUTOMIC_JOB_0510":
-                        result = new CustomerManagerFacade().CalculateBadgeCustomer();    
+                        result = new CustomerManagerFacade().CalculateBadgeCustomer();
                         break;
                     case "DNVR_AUTOMIC_JOB_0511":
-                        result = new CustomerManagerFacade().DeleteBadgeCustomer();          
+                        result = new CustomerManagerFacade().DeleteBadgeCustomer();
                         break;
                     case "DNVR_AUTOMIC_JOB_0513":
-                        result = new CustomerManagerFacade().UpdateCustomerAddressCoordinate();      
+                        result = new CustomerManagerFacade().UpdateCustomerAddressCoordinate();
                         break;
                     case "DNVR_AUTOMIC_JOB_0516":
-                        result = new CustomerManagerFacade().EventRegularPoolCalculationBatch();                      
+                        result = new CustomerManagerFacade().EventRegularPoolCalculationBatch();
                         break;
                     case "DNVR_AUTOMIC_JOB_ASX007":
                         retCode = new PartManagerFacade().CreateAndCalculateQualifiedServicePremiumPeriod();
@@ -842,7 +842,7 @@ namespace Denver.Services
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
                     case "DNVR_AUTOMIC_JOB_0518":
-                        result = new CustomerManagerFacade().SendHoldingLeadRequestInformationMail();       
+                        result = new CustomerManagerFacade().SendHoldingLeadRequestInformationMail();
                         break;
                     case "AcceptTurkuazInvoices":
                         retCode = new FinanceManagerFacade().AcceptInvoicesWithBatch(); //Eduardo_20162709
@@ -856,7 +856,7 @@ namespace Denver.Services
                         retCode = new SalesManagerFacade().CustomerSurveyBatch();
                         result = new BatchResultStruct { ReturnCode = retCode, DataReturned = null };
                         break;
-                    
+
                     case "SALE_GAC_LOG":
                         {
                             RetCode retCodeGAC = CommonFacade.ProcessWebRequests(DateTime.Today.AddDays(-1).Date.AddHours(-2), DateTime.Now); //BSŞ_20140209
