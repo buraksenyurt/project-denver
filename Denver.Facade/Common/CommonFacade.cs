@@ -120,27 +120,24 @@ namespace Denver.Facade.Common
             throw new NotImplementedException();
         }
 
-        public int SendTestVehiclesForExpiredMail()
-        {
-            throw new NotImplementedException();
-        }
-
         public static RetCode ProcessWebRequests(DateTime dateTime, DateTime now)
         {
             throw new NotImplementedException();
         }
-
-        public int SendNotificationMailForUninvoicedTestFirms()
-        {
-            throw new NotImplementedException();
-        }
-
         public int SendCountryModelMissingEmail()
         {
             throw new NotImplementedException();
         }
-
+        public int SendNotificationMailForUninvoicedTestFirms()
+        {
+            throw new NotImplementedException();
+        }
         public int SendDepartmentApprovalWaitingMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendTestPartsForExpiredMail()
         {
             throw new NotImplementedException();
         }

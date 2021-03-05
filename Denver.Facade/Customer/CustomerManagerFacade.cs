@@ -219,7 +219,7 @@ namespace Denver.Facade.Parts
             throw new NotImplementedException();
         }
 
-        public int CustomerVehicleServiceBadge()
+        public int CustomerServiceBadge()
         {
             throw new NotImplementedException();
         }
