@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BatchResultStruct.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="ExceptionManager.cs" />
     <Compile Include="Experience.cs" />
