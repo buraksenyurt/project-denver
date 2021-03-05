@@ -1,5 +1,6 @@
 ﻿using Denver.BLL;
 using Denver.Common;
+using Denver.Common.Services;
 using Denver.PCL;
 using Denver.Tools;
 using System;
@@ -67,6 +68,66 @@ namespace Denver.Facade.Parts
             {
                 return null;
             }
+        }
+
+        public BatchResultStruct CreateDailyByBrandGroup()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateForWaiting()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateInsuranceBonusDaily()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateOriginalAccessoryBonusDaily()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchDraftProcess()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchProcessDealerOrderDraftCreation()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecuteBatchPlanningJobForDistributor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateOrderDraftForDealerBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecutePlanningJobFromQueueForDistributor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecutePlannedUrgentOrderDrafts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int BuyBackDealerDraftCreate()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForPartCriticalStock()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -44,8 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomicJob\AutomicJobFacade.cs" />
+    <Compile Include="Common\CatalogTransferOperationsFacade.cs" />
+    <Compile Include="Common\FileTransferOperationsFacade.cs" />
+    <Compile Include="Customer\CustomerManagerFacade.cs" />
+    <Compile Include="Finance\FinanceManagerFacade.cs" />
+    <Compile Include="Order\OrderManagerFacade.cs" />
     <Compile Include="Parts\PartManagerFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\SalesManagerFacade.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Denver.BLL\Denver.BLL.csproj">
