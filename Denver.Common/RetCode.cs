@@ -8,6 +8,8 @@ namespace Denver.Common
     public enum RetCode
     {
         Success,
-        Fail
+        Fail,
+        GNLServicesBatchJobCanNotBeAdded,
+        GNLBatchJobCodeNotFound
     }
 }

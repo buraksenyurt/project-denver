@@ -1,5 +1,6 @@
 ﻿using Denver.BLL;
 using Denver.Common;
+using Denver.Common.Services;
 using Denver.PCL;
 using Denver.Tools;
 using System;
@@ -67,6 +68,256 @@ namespace Denver.Facade.Parts
             {
                 return null;
             }
+        }
+
+        public BatchResultStruct CreateDailyByBrandGroup()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateForWaiting()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateInsuranceBonusDaily()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateOriginalAccessoryBonusDaily()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchDraftProcess()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchProcessDealerOrderDraftCreation()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecuteBatchPlanningJobForDistributor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateOrderDraftForDealerBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecutePlanningJobFromQueueForDistributor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecutePlannedUrgentOrderDrafts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int BuyBackDealerDraftCreate()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForPartCriticalStock()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int DomesticSupplyInvoiceImport()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForOrderDealerShipment()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CreateInvoiceForDomesticInvoiceDraftFiles()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int ProcessConfirmation()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int BatchAbnormalOrderProcess()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SentBackOrderInfoMails()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int DeletePoolStockPartsThatHasNoPoolStock()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int UpdatePartPriceBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct UpdatePartPlanningStatusForModelStockListParts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct UpdateAllModelStockListWithSupersession()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct TransferCatalogSupersessions()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendMailForOpenDomesticOrders()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForOrderDealerNoPriceAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForPartCatalogHistory()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForPartDifferentSPFOnSupersessionChain()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetOrderStatusFromUSAPartner()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int UpdateWebOrderStatusAndSendMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int BatchIncomingOEMOrderRejectionInfoProcess()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int AddPoolStockUnusedParts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int SendMailForNotEntrepotExitInvoice()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int DirectShipmentTransferSendMail()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct ExecuteDailyPerformanceBatch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int DirectShipmentConversion()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateDailyBenchBonus()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchUpdatePartSupersessionRulesForCatalogDiff()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailSeatAccessorySelling()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CreateAndFillFOBPriceExtension()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CreateAndCalculateQualifiedServicePremiumPeriod()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CalculatePartLTValues()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct BatchUpdatePartSupersessionRules()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForUnPickedSlips()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForUnPackedSlipsForCutOff()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMailForUnPickedSlipsForCutOff()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int RemoveAllLocatedOrders()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct UpdateDealerBaseStockPartsWithoutStockCards()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct SendMessageForADRTypeParts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct TransferUserPriority()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BatchResultStruct CalculateOEMOrderPriorityForTruckInvoices()
+        {
+            throw new NotImplementedException();
         }
     }
 }

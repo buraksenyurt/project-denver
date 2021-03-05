@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BatchResultStruct.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="ExceptionManager.cs" />
     <Compile Include="Experience.cs" />
     <Compile Include="LogType.cs" />
+    <Compile Include="ParameterManager.cs" />
     <Compile Include="ProjectSize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetCode.cs" />
