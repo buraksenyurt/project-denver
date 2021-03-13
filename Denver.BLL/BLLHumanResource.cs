@@ -1,7 +1,9 @@
 ﻿using Denver.Common;
+using Denver.DAL;
 using Denver.PCL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -46,6 +48,12 @@ namespace Denver.BLL
             }
 
             return result;
+        }
+
+        public DataSet LoadAllPersons(int start, int end)
+        {
+            DALPerson dalPerson = new DALPerson();
+            return dalPerson.LoadAllPersons(start,end);
         }
 
         public Dictionary<string, string> LoadWorkLocations()

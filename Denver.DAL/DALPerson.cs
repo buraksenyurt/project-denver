@@ -2,6 +2,7 @@
 using Denver.Configuration;
 using Denver.PCL;
 using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Denver.DAL
@@ -55,6 +56,18 @@ namespace Denver.DAL
             sqlConnection.Close();
             return person;
 
+        }
+
+        public DataSet LoadAllPersons(int start, int end)
+        {
+            SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
+            SqlCommand command = new SqlCommand("spGetAllPerson");
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            sqlConnection.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet set = new DataSet();
+            adapter.Fill(set);
+            return set;
         }
 
         public bool IsExistPerson(Person person)

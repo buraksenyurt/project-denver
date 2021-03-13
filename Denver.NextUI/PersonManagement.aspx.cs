@@ -4,6 +4,7 @@ using Denver.DAL;
 using Denver.PCL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,6 +26,17 @@ namespace Denver.NextUI
                 item.Text = keyValuePair.Key;
                 drpDownListWorkLocation.Items.Add(item);
             }
+
+            PopulatePersonelListes();
+        }
+
+        private void PopulatePersonelListes()
+        {
+            BLLHumanResource bLLHumanResource = new BLLHumanResource();
+            DataSet set= bLLHumanResource.LoadAllPersons(1,100);
+            GridViewPersonelListesi.DataSource = set.Tables[0];
+            GridViewPersonelListesi.DataBind();
+            Session[SessionKeys.AllPerson] = set.Tables[0];
         }
 
         protected void MultiView1_ActiveViewChanged(object sender, EventArgs e)

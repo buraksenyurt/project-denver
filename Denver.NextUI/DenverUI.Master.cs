@@ -1,4 +1,5 @@
-﻿using Denver.Facade.Common;
+﻿using Denver.Common;
+using Denver.Facade.Common;
 using Denver.PCL;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace Denver.NextUI
         {
             CommonFacade commonFacade = new CommonFacade();
             WebUser user=commonFacade.GetCurrentUser();
+            Session[SessionKeys.CurrentWebUser] = user;
             Response.Redirect("~/PersonManagement.aspx?User"+user.FullName+"&token="+user.Token+"&registirationNumber="+user.RegistrationNumber);
         }
     }
