@@ -1,4 +1,6 @@
-﻿using Denver.PCL;
+﻿using Denver.Common;
+using Denver.DAL;
+using Denver.PCL;
 using System;
 
 namespace Denver.BLL
@@ -7,12 +9,15 @@ namespace Denver.BLL
     {
         public int GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(Person person)
         {
-            throw new NotImplementedException();
+            DALProjectManagement manager = new DALProjectManagement();
+            int result = manager.GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(person);
+            return result;
         }
 
         public ProjectInfo[] GetProjectsForEmployee(Person person)
         {
-            throw new NotImplementedException();
+            DALProjectManagement manager = new DALProjectManagement();
+            return manager.GetProjects(person);
         }
     }
 }

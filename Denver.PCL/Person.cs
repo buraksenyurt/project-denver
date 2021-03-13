@@ -70,5 +70,7 @@ namespace Denver.PCL
                 _workLocation = value;
             }
         }
+
+        public int PersonID { get; set; }
     }
 }

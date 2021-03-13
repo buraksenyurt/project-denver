@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DALCommon.cs" />
+    <Compile Include="DALProjectManagement.cs" />
     <Compile Include="DALPartManager.cs" />
     <Compile Include="DALPerson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

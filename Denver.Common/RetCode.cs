@@ -10,6 +10,7 @@ namespace Denver.Common
         Success,
         Fail,
         GNLServicesBatchJobCanNotBeAdded,
-        GNLBatchJobCodeNotFound
+        GNLBatchJobCodeNotFound,
+        ThereAreNoProjectsForThisPerson
     }
 }
