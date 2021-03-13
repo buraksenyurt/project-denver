@@ -1,10 +1,13 @@
-﻿using Denver.Common;
+﻿using Denver.BLL;
+using Denver.Common;
 using Denver.Common.Services;
+using Denver.PCL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Denver.Facade.Common
 {
@@ -23,6 +26,15 @@ namespace Denver.Facade.Common
         public BatchResultStruct ExecuteProcessBatchAll()
         {
             throw new NotImplementedException();
+        }
+
+        public WebUser GetCurrentUser()
+        {
+            var userName = HttpContext.Current.Session["UserName"].ToString();
+            BLLCommon bLLCommon = new BLLCommon();
+            WebUser user = new WebUser();
+            bLLCommon.GetCurrentUser(userName, user);
+            return user;
         }
 
         public int Fixing()

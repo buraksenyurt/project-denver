@@ -25,7 +25,10 @@
                     </tr>
                     <tr>
                         <td style="width:25%;vertical-align:top">
-                            <asp:Button ID="btnPartsPage" runat="server" OnClick="btnPartsPage_Click" SkinID="btnLink" Text="Parça Ekle" />
+                            <asp:Button ID="btnPartsPage" runat="server" OnClick="btnPartsPage_Click" SkinID="btnLink" Text="Parça Ekle" Width="207px" />
+                            <br />
+                            <br />
+                            <asp:Button ID="btnPersMngmt" runat="server" OnClick="btnPersMngmt_Click" SkinID="btnLink" Text="Personel Yönetim" />
                         </td>
                         <td>
                             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

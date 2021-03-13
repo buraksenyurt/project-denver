@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BaseEntityClass.cs" />
     <Compile Include="Part.cs" />
+    <Compile Include="WebUser.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="ProjectInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

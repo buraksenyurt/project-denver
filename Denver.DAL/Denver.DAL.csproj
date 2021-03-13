@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALCommon.cs" />
     <Compile Include="DALPartManager.cs" />
     <Compile Include="DALPerson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

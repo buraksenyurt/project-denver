@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLLHumanResource.cs" />
+    <Compile Include="BLLCommon.cs" />
     <Compile Include="BLLPartManager.cs" />
     <Compile Include="BLLProjectManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

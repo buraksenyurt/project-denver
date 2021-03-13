@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Denver.Facade.Common;
+using Denver.PCL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +19,13 @@ namespace Denver.NextUI
         protected void btnPartsPage_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Parts.aspx");
+        }
+
+        protected void btnPersMngmt_Click(object sender, EventArgs e)
+        {
+            CommonFacade commonFacade = new CommonFacade();
+            WebUser user=commonFacade.GetCurrentUser();
+            Response.Redirect("~/PersonManagement.aspx?User"+user.FullName+"&token="+user.Token+"&registirationNumber="+user.RegistrationNumber);
         }
     }
 }
