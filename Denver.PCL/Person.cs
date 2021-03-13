@@ -13,7 +13,7 @@ namespace Denver.PCL
         private decimal _salary;
         private DateTime _workStartDate;
         private WorkLocation _workLocation;
-
+        public int PersonNo;
         public string Name
         {
             get { return _name; }
@@ -70,7 +70,5 @@ namespace Denver.PCL
                 _workLocation = value;
             }
         }
-
-        public int PersonID { get; set; }
     }
 }

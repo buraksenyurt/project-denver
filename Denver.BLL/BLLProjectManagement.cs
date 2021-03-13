@@ -2,7 +2,6 @@
 using Denver.DAL;
 using Denver.PCL;
 using System;
-
 namespace Denver.BLL
 {
     public class BLLProjectManagement
@@ -13,7 +12,6 @@ namespace Denver.BLL
             int result = manager.GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(person);
             return result;
         }
-
         public ProjectInfo[] GetProjectsForEmployee(Person person)
         {
             DALProjectManagement manager = new DALProjectManagement();

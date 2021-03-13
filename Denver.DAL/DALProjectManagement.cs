@@ -12,7 +12,7 @@ namespace Denver.DAL
         public int GetSuccessfullyAccomplishedTotalProjectsCountForEmployee(Person person)
         {
             SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
-            SqlCommand command = new SqlCommand("SELECT count(*) FROM Projects WHERE personID="+person.PersonID);
+            SqlCommand command = new SqlCommand("SELECT count(*) FROM Projects WHERE personID="+person.PersonNo);
             command.Connection = sqlConnection;
             sqlConnection.Open();
             int count=command.ExecuteNonQuery();
@@ -23,7 +23,7 @@ namespace Denver.DAL
         public ProjectInfo[] GetProjects(Person person)
         {
             SqlConnection sqlConnection = new SqlConnection(DbConfig.ConnectionString);
-            SqlCommand command = new SqlCommand("SELECT * FROM Proejcts WHERE personID="+person.PersonID);
+            SqlCommand command = new SqlCommand("SELECT * FROM Proejcts WHERE personID="+person.PersonNo);
             command.Connection = sqlConnection;
             sqlConnection.Open();
             SqlDataAdapter adapter = new SqlDataAdapter(command);
