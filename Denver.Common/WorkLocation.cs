@@ -8,6 +8,8 @@ namespace Denver.Common
     public enum WorkLocation
     {
         Office=1003,
-        Remote=1004
+        Remote=1004,
+        OnCustomerOffice=1005,
+        Parttime=1006
     }
 }

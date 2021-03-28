@@ -66,7 +66,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:GridView ID="GridViewPersonelListesi" runat="server" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None">
+                    <asp:GridView ID="GridViewPersonelListesi" runat="server" BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black" GridLines="None" AllowPaging="True">
                         <AlternatingRowStyle BackColor="PaleGoldenrod" />
                         <FooterStyle BackColor="Tan" />
                         <HeaderStyle BackColor="Tan" Font-Bold="True" />

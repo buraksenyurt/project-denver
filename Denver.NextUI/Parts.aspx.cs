@@ -1,6 +1,8 @@
 ﻿using Denver.Facade.Parts;
+using Denver.PCL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,7 +16,9 @@ namespace Denver.NextUI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet allParts = partManagerFacade.GetParts();
+            grdPartList.DataSource = allParts;
+            grdPartList.DataBind();
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)

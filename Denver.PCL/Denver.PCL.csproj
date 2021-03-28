@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntityClass.cs" />
+    <Compile Include="City.cs" />
     <Compile Include="Part.cs" />
     <Compile Include="WebUser.cs" />
     <Compile Include="Person.cs" />

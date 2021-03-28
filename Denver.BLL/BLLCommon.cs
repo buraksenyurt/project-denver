@@ -3,6 +3,7 @@ using Denver.DAL;
 using Denver.PCL;
 using Denver.Tools;
 using System;
+using System.Collections.Generic;
 using System.Data;
 
 namespace Denver.BLL
@@ -14,6 +15,13 @@ namespace Denver.BLL
             DALCommon common = new DALCommon();
             common.GetCurrentUser(userName, user);
             return RetCode.Success;
+        }
+
+        public List<City> GetCities()
+        {
+            DALCommon common = new DALCommon();
+            List<City> cities=common.GetCities();
+            return cities;
         }
     }
 }

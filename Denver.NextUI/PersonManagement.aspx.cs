@@ -76,8 +76,14 @@ namespace Denver.NextUI
 
         private WorkLocation FindEnumValue(string selectedValue)
         {
-            //TODO: Sonradan burayı tamamlayalım
-            return WorkLocation.Office;
+            string[] names=Enum.GetNames(typeof(WorkLocation));
+            WorkLocation result=WorkLocation.Office;
+            for (int i = 0; i < names.Length-1; i++)
+            {
+                if (names[i] == selectedValue)
+                     result=(WorkLocation)Enum.Parse(typeof(WorkLocation), names[i]);
+            }
+            return result;
         }
     }
 }
